@@ -1,0 +1,97 @@
+nav{
+    padding: 10px;
+    background-color: hsl(0, 1%, 30%);
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 70%);
+    font-size: 1.5em;
+}
+nav ul li a:hover{
+    background-color: hsl(0, 1%, 40%);
+    color:aqua;
+    border-radius: 5px;
+    padding: 10px;
+}
+nav ul li .active{
+    border-bottom: 3px solid rgb(15, 134, 225);
+    background-color: hsl(0, 1%, 41%);
+    color: aqua;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: black;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 500px;
+    background-color: hsl(0, 0%, 20%);
+    color: whitesmoke;
+}
+#time{
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: 5px;
+
+}
+#date{
+    padding-bottom: 20px;
+    color:beige;
+}
+button{
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-width: 80px;
+    cursor: pointer;
+}
+#start{
+    background-color: hsl(120, 82%, 34%);
+}
+#pause{
+    background-color: hsl(39, 100%, 52%);
+}
+#reset{
+    background-color: hsl(0, 100%, 50%);
+}
+#start:hover {
+    background-color: hsl(120, 82%, 54%);
+}
+#pause:hover{
+    background-color: hsl(39, 100%, 72%);
+}
+#reset:hover{
+    background-color: hsl(0, 100%, 70%);
+}
+#previous{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
